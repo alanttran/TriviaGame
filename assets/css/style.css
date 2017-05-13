@@ -1,0 +1,40 @@
+body{
+	background-image: url('https://www.feedsyndicate.com/wp-content/uploads/2013/11/pieces-abstract-background-bubble-artik.png');
+	background-size: cover;
+}
+.container{
+	text-align: center;
+	background: lightgray;
+	border-radius: 5px;
+	padding-bottom: 20px;
+}
+h1{
+	color: white;
+	font-family: 'Shrikhand', cursive;
+	font-size: 64px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+#choices{
+	font-size: 32px;
+	width:250px;
+	margin:0 auto;
+}
+.answer-choice{
+	margin-bottom: 10px;
+	cursor: pointer;
+	width:auto;
+}
+.answer-choice:hover{
+	font-weight: bold;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+  font-weight: bold;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
