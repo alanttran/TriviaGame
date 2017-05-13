@@ -44,7 +44,7 @@ $(document).ready(function() {
                 counter = 0;
 
                 $('#countdown').html(counter);
-                $(".answer-choice[data-value = " + questions[questionCounter].correctAnswer + "]").addClass('blink');
+                $(".answer-choice[data-value = " + questions[questionCounter].correctAnswer + "]").css('color', 'blue').addClass('blink');;
                 clearInterval(countdown);
                 setTimeout(function() {
                     startTimer();
@@ -102,8 +102,7 @@ $(document).ready(function() {
         if ($(this).attr('data-value') === questions[questionCounter].correctAnswer.toString()) {
             console.log('correct!');
             correctAnswer++;
-            $(this).css('color', 'green');
-            $(this).addClass('blink');
+            $(this).css('color', 'green').addClass('blink');
 
             //startTimer();
         } else {
